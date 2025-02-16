@@ -4,19 +4,45 @@ class NavBar extends HTMLElement {
   }
 
   connectedCallback() {
-    // TODO - add 'Jonathan Conroy' on 2 of the 3 pages
-    // TODO - highlight the page that we're currently on
-    // TODO - hamburger icon
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   // Get all the elements with the specific IDs
+    //   const navIcons = document.querySelectorAll("#hamburger-icon");
+
+    //   // Add a click event listener to each element
+    //   navIcons.forEach(function (icon) {
+    //     icon.addEventListener("click", function () {
+    //       // Toggle the 'open' class when clicked
+    //       this.classList.toggle("open");
+    //     });
+    //   });
+    // });
+
+    const page = this.getAttribute("page");
+
+    const nameText = page === "publications" || page === "miscellanea" ? "<a href='/'> <span>Jonathan</span> Conroy </a>" : "";
+
+    const aboutHighlighted = page === "about" ? "id='highlighted-nav-link'" : "";
+    const publicationsHighlighted = page === "publications" ? "id='highlighted-nav-link'" : "";
+    const miscellaneaHighlighted = page === "miscellanea" ? "id='highlighted-nav-link'" : "";
+
     this.innerHTML = `
-        <div style="display:flex; gap:5px; justify-content:flex-end">
-         
-              <a href="index.html">about</a>
-           
-              <a href="publications.html">publications</a>
-          
-              <a href="miscellanea.html">miscellanea</a> 
-          
-        </div>
+        <header id="nav-bar">
+          <div class="container">
+              ${nameText}
+
+              <div id="nav-links">
+                <a ${aboutHighlighted} href="index.html">about</a>
+
+                <a ${publicationsHighlighted} href="publications.html">publications</a>
+
+                <a ${miscellaneaHighlighted} href="miscellanea.html">miscellanea</a>
+              </div>
+
+              <div id="hamburger-icon">
+                <button>TODO</button>
+              </div>
+          </div>
+        </header>
       `;
   }
 
