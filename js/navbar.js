@@ -4,19 +4,6 @@ class NavBar extends HTMLElement {
   }
 
   connectedCallback() {
-    // document.addEventListener("DOMContentLoaded", function () {
-    //   // Get all the elements with the specific IDs
-    //   const navIcons = document.querySelectorAll("#hamburger-icon");
-
-    //   // Add a click event listener to each element
-    //   navIcons.forEach(function (icon) {
-    //     icon.addEventListener("click", function () {
-    //       // Toggle the 'open' class when clicked
-    //       this.classList.toggle("open");
-    //     });
-    //   });
-    // });
-
     const page = this.getAttribute("page");
 
     const nameText = page === "publications" || page === "miscellanea" ? "<a href='/' id='nav-bar-name-text'> <b>Jonathan</b> Conroy </a>" : "";
@@ -25,47 +12,47 @@ class NavBar extends HTMLElement {
     const publicationsHighlighted = page === "publications" ? "id='highlighted-nav-link'" : "";
     const miscellaneaHighlighted = page === "miscellanea" ? "id='highlighted-nav-link'" : "";
 
+    const navLinks = `
+      <a ${aboutHighlighted} class="nav-link" href="/">about</a>
+      <a ${publicationsHighlighted} class="nav-link" href="/publications">publications</a>
+      <a ${miscellaneaHighlighted} class="nav-link" href="/miscellanea">miscellanea</a>
+    `;
+
     this.innerHTML = `
         <header id="nav-bar">
-          <div class="container">
+          <div class="container large-nav-bar-container">
               ${nameText}
 
-              <div id="nav-links">
-                <a ${aboutHighlighted} class="nav-link" href="index.html">about</a>
-
-                <a ${publicationsHighlighted} class="nav-link" href="publications.html">publications</a>
-
-                <a ${miscellaneaHighlighted} class="nav-link" href="miscellanea.html">miscellanea</a>
+              <div id="horizontal-nav-links">
+                ${navLinks}
               </div>
 
-              <div id="hamburger-icon">
-                <button>TODO</button>
+              <div id="hamburger-div">
+                <div id="hamburger">
+                  <div class="bar bar1"></div>
+                  <div class="bar bar2"></div>
+                  <div class="bar bar3"></div>
+                </div>
               </div>
+          </div>
+          <div class="container small-nav-bar-container">
+            <div id="vertical-nav-links">
+              ${navLinks}
+            </div>
           </div>
         </header>
       `;
+
+    this.querySelector("#hamburger").addEventListener("click", () => this.toggleMenu());
   }
 
-  render() {
-    //   const size = this.getAttribute('btnsize') || 'medium'; // Default size
-    //   // Define the button size styles based on the btnSize attribute
-    //   const sizeStyles = {
-    //     small: {
-    //       padding: '4px 8px',
-    //       fontSize: '12px'
-    //     },
-    //     medium: {
-    //       padding: '8px 16px',
-    //       fontSize: '16px'
-    //     },
-    //     large: {
-    //       padding: '12px 24px',
-    //       fontSize: '20px'
-    //     }
-    //   };
-    //   const { padding, fontSize } = sizeStyles[size] || sizeStyles.medium;
+  toggleMenu() {
+    const hamburger = this.querySelector("#hamburger");
+    const dropdownMenu = this.querySelector("#vertical-nav-links");
+
+    hamburger.classList.toggle("open");
+    dropdownMenu.classList.toggle("show");
   }
 }
 
-// Register the custom button element
 customElements.define("nav-bar", NavBar);
