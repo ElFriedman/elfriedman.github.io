@@ -112,6 +112,10 @@ li {
     margin-bottom: 2rem;
 }
 
+.font-weight-bold {
+    font-weight: 700;
+}
+
 
 /* Formatting for links (al-folio theme) */
 a {
