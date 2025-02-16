@@ -31,11 +31,11 @@ class NavBar extends HTMLElement {
               ${nameText}
 
               <div id="nav-links">
-                <a ${aboutHighlighted} href="index.html">about</a>
+                <a ${aboutHighlighted} class="nav-link" href="index.html">about</a>
 
-                <a ${publicationsHighlighted} href="publications.html">publications</a>
+                <a ${publicationsHighlighted} class="nav-link" href="publications.html">publications</a>
 
-                <a ${miscellaneaHighlighted} href="miscellanea.html">miscellanea</a>
+                <a ${miscellaneaHighlighted} class="nav-link" href="miscellanea.html">miscellanea</a>
               </div>
 
               <div id="hamburger-icon">
