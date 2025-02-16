@@ -52,11 +52,20 @@ fetch("../assets/data/publications.json")
       }
     });
 
-    // Load MathJax (after all elements are created)
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "./js/MathJax/tex-chtml.js";
-    document.getElementsByTagName("head")[0].appendChild(script);
+  // Load MathJax (after all elements are created)
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    loader: {load: ["input/tex", "output/chtml"]}
+  };
+
+  (function () {
+    var script = document.createElement('script');
+    script.src = './js/MathJax/tex-chtml.js';
+    script.async = true;
+    document.head.appendChild(script);
+  })();
   })
   .catch((error) => {
     console.error("Error:", error); // Handle any errors
