@@ -19,7 +19,7 @@ class NavBar extends HTMLElement {
 
     const page = this.getAttribute("page");
 
-    const nameText = page === "publications" || page === "miscellanea" ? "<a href='/'> <span class='font-weight-bold'>Jonathan</span> Conroy </a>" : "";
+    const nameText = page === "publications" || page === "miscellanea" ? "<a href='/' id='nav-bar-name-text'> <b>Jonathan</b> Conroy </a>" : "";
 
     const aboutHighlighted = page === "about" ? "id='highlighted-nav-link'" : "";
     const publicationsHighlighted = page === "publications" ? "id='highlighted-nav-link'" : "";

@@ -33,7 +33,8 @@
             "fullName": "40th International Symposium on Computational Geometry",
             "abbreviatedName": "SoCG’24",
             "year": "2024"
-        }
+        },
+        "invitation": "DCG special issue"
     },
     {
         "title": "Shortcut Partitions in Minor-Free Graphs: Steiner Point Removal, Distance Oracles, Tree Covers, and More",
@@ -60,7 +61,8 @@
             "fullName": "38th International Symposium on Computational Geometry",
             "abbreviatedName": "SoCG’22",
             "year": "2022"
-        }
+        },
+        "invitation": "JoCG special issue"
     },
     {
         "title": "Robot Development and Path Planning for Indoor Ultraviolet Light Disinfection",

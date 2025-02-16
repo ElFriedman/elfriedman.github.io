@@ -48,24 +48,33 @@ fetch("../assets/data/publications.json")
           publicationDiv.appendChild(conferenceDiv);
         }
 
+        if (publication?.invitation) {
+          const invitationDiv = document.createElement("div");
+          invitationDiv.innerHTML = `<b>Invited to ${publication.invitation}.</b>`;
+          publicationDiv.appendChild(invitationDiv);
+        }
+
         container.appendChild(publicationDiv);
       }
     });
 
-  // Load MathJax (after all elements are created)
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    loader: {load: ["input/tex", "output/chtml"]}
-  };
+    // Load MathJax (after all elements are created)
+    window.MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+      loader: { load: ["input/tex", "output/chtml"] },
+    };
 
-  (function () {
-    var script = document.createElement('script');
-    script.src = './js/MathJax/tex-chtml.js';
-    script.async = true;
-    document.head.appendChild(script);
-  })();
+    (function () {
+      var script = document.createElement("script");
+      script.src = "./js/MathJax/tex-chtml.js";
+      script.async = true;
+      document.head.appendChild(script);
+    })();
   })
   .catch((error) => {
     console.error("Error:", error); // Handle any errors

@@ -120,11 +120,6 @@ li {
     margin-bottom: 2rem;
 }
 
-.font-weight-bold {
-    font-weight: 700;
-}
-
-
 /* Formatting for links (al-folio theme) */
 a {
     color: #b509ac;
@@ -147,4 +142,9 @@ a:hover {
 #highlighted-nav-link {
     color: #b509ac;
     font-weight: bolder;
+}
+
+#nav-bar-name-text {
+    color: inherit;
+    text-decoration: none;
 }
