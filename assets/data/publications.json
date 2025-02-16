@@ -1,26 +1,74 @@
 [
     {
-        "title": "How to Protect Yourself from Threatening Skeletons: Optimal Padded Decompositions for Minor-Free Graphs"
+        "title": "How to Protect Yourself from Threatening Skeletons: Optimal Padded Decompositions for Minor-Free Graphs",
+        "authors": ["Arnold Filtser"],
+        "conference": {
+            "fullName": "40th International Symposium on Computational Geometry",
+            "abbreviatedName": "SoCG’24",
+            "year": "2024"
+        }
     },
     {
-        "title": "Light Tree Covers, Routing, and Path-Reporting Oracles via Spanning Tree Covers in Doubling Graphs"
+        "title": "Light Tree Covers, Routing, and Path-Reporting Oracles via Spanning Tree Covers in Doubling Graphs",
+        "authors": ["Hsien-Chih Chang", "Hung Le", "Shay Solomon", "Cuong Than"],
+        "conference": {
+            "fullName": "57th Symposium on Theory of Computing",
+            "abbreviatedName": "STOC’25",
+            "year": "2025"
+        }
     },
     {
-        "title": "Embedding Planar Graphs into Graphs of Treewidth \\(O(\\log^{3}n)\\)"
+        "title": "Embedding Planar Graphs into Graphs of Treewidth \\(O(\\log^{3}n)\\)",
+        "authors": ["Hsien-Chih Chang", "Vincent Cohen-Addad", "Hung Le", "Marcin Pilipczuk", "Michał Pilipczuk"],
+        "conference": {
+            "fullName": "2025 Symposium on Discrete Algorithms",
+            "abbreviatedName": "SODA’25",
+            "year": "2025"
+        }
     },
     {
-        "title": "Optimal Euclidean Tree Covers"
+        "title": "Optimal Euclidean Tree Covers",
+        "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
+        "conference": {
+            "fullName": "40th International Symposium on Computational Geometry",
+            "abbreviatedName": "SoCG’24",
+            "year": "2024"
+        }
     },
     {
-        "title": "Shortcut Partitions in Minor-Free Graphs: Steiner Point Removal, Distance Oracles, Tree Covers, and More"
+        "title": "Shortcut Partitions in Minor-Free Graphs: Steiner Point Removal, Distance Oracles, Tree Covers, and More",
+        "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
+        "conference": {
+            "fullName": "2024 Symposium on Discrete Algorithms",
+            "abbreviatedName": "SODA’24",
+            "year": "2024"
+        }
     },
     {
-        "title": "Covering Planar Metrics (and Beyond): \\(O(1)\\) Trees Suffice"
+        "title": "Covering Planar Metrics (and Beyond): \\(O(1)\\) Trees Suffice",
+        "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
+        "conference": {
+            "fullName": "64th Symposium on Foundations of Computer Science",
+            "abbreviatedName": "FOCS’23",
+            "year": "2023"
+        }
     },
     {
-        "title": "Hop-Spanners for Geometric Intersection Graphs"
+        "title": "Hop-Spanners for Geometric Intersection Graphs",
+        "authors": ["Csaba Tóth"],
+        "conference": {
+            "fullName": "38th International Symposium on Computational Geometry",
+            "abbreviatedName": "SoCG’22",
+            "year": "2022"
+        }
     },
     {
-        "title": "Robot Development and Path Planning for Indoor Ultraviolet Light Disinfection"
+        "title": "Robot Development and Path Planning for Indoor Ultraviolet Light Disinfection",
+        "authors": ["Christopher Thierauf", "Parker Rule", "Evan A. Krause", "Hugo Alves Akitaya", "Andrei Gonczi", "Matias Korman", "Matthias Scheutz"],
+        "conference": {
+            "fullName": "2021 IEEE International Conference on Robotics and Automation",
+            "abbreviatedName": "ICRA’21",
+            "year": "2021"
+        }
     }
 ]
