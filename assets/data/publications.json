@@ -3,9 +3,9 @@
         "title": "How to Protect Yourself from Threatening Skeletons: Optimal Padded Decompositions for Minor-Free Graphs",
         "authors": ["Arnold Filtser"],
         "conference": {
-            "fullName": "40th International Symposium on Computational Geometry",
-            "abbreviatedName": "SoCG’24",
-            "year": "2024"
+            "fullName": "57th Symposium on Theory of Computing",
+            "abbreviatedName": "STOC’25",
+            "year": "2025"
         }
     },
     {
@@ -18,13 +18,15 @@
         }
     },
     {
-        "title": "Embedding Planar Graphs into Graphs of Treewidth \\(O(\\log^{3}n)\\)",
+        "title": "Embedding Planar Graphs into Graphs of Treewidth $O(\\log^{3}n)$",
         "authors": ["Hsien-Chih Chang", "Vincent Cohen-Addad", "Hung Le", "Marcin Pilipczuk", "Michał Pilipczuk"],
         "conference": {
             "fullName": "2025 Symposium on Discrete Algorithms",
             "abbreviatedName": "SODA’25",
             "year": "2025"
-        }
+        },
+        "links": [["arXiv", "https://arxiv.org/abs/2411.00216"],
+                    ["slides", "../assets/pdf/soda25-treewidth-slides.pdf"]]
     },
     {
         "title": "Optimal Euclidean Tree Covers",
@@ -34,7 +36,8 @@
             "abbreviatedName": "SoCG’24",
             "year": "2024"
         },
-        "invitation": "DCG special issue"
+        "emphNote": "Invited to DCG special issue.",
+        "links": [["arXiv", "https://arxiv.org/abs/2403.17754"]]
     },
     {
         "title": "Shortcut Partitions in Minor-Free Graphs: Steiner Point Removal, Distance Oracles, Tree Covers, and More",
@@ -43,16 +46,23 @@
             "fullName": "2024 Symposium on Discrete Algorithms",
             "abbreviatedName": "SODA’24",
             "year": "2024"
-        }
+        },
+        "note": "This paper subsumes results from our <a href=\"https://arxiv.org/abs/2306.06235\">earlier manuscript</a> about planar graphs.",
+        "links": [["arXiv", "https://arxiv.org/abs/2308.00555"],
+                   ["slides", "../assets/pdf/soda24-SPR-slides.pdf"]]
     },
     {
-        "title": "Covering Planar Metrics (and Beyond): \\(O(1)\\) Trees Suffice",
+        "title": "Covering Planar Metrics (and Beyond): $O(1)$ Trees Suffice",
         "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
         "conference": {
             "fullName": "64th Symposium on Foundations of Computer Science",
             "abbreviatedName": "FOCS’23",
             "year": "2023"
-        }
+        },
+        "links": [["arXiv", "https://arxiv.org/abs/2306.06215"],
+                    ["slides", "../assets/pdf/focs23-treecover-slides.pdf"],
+                    ["talk by me @ FOCS", "https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&preview=Session+13C.mov&rlkey=kupk79p7h94tyxrcq9y370fg6&dl=0"],
+                    ["talk by Hsien-Chih @ DIMACS", "https://youtu.be/6EnxGdT2MAU?si=wEwFn9pU8UUKKo-O"]]
     },
     {
         "title": "Hop-Spanners for Geometric Intersection Graphs",
@@ -62,7 +72,9 @@
             "abbreviatedName": "SoCG’22",
             "year": "2022"
         },
-        "invitation": "JoCG special issue"
+        "emphNote": "Invited to JoCG special issue.",
+        "links": [["arXiv", "https://arxiv.org/abs/2112.07158"],
+                  ["slides", "../assets/pdf/socg22-hopspanner-slides.pdf"]]
     },
     {
         "title": "Robot Development and Path Planning for Indoor Ultraviolet Light Disinfection",
@@ -71,6 +83,7 @@
             "fullName": "2021 IEEE International Conference on Robotics and Automation",
             "abbreviatedName": "ICRA’21",
             "year": "2021"
-        }
+        },
+        "links": [["arXiv", "https://arxiv.org/abs/2104.02913"]]
     }
 ]

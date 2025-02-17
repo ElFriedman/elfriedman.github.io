@@ -38,7 +38,7 @@ fetch("../assets/data/publications.json")
           const conferenceDiv = document.createElement("div");
           conferenceDiv.innerHTML = "in " + publication.conference.fullName;
           if (publication?.conference?.abbreviatedName) {
-            conferenceDiv.innerHTML += ` <b>[${publication.conference.abbreviatedName}]</b>`;
+            conferenceDiv.innerHTML += ` <b>(${publication.conference.abbreviatedName})</b>`;
           }
           if (publication?.conference?.year) {
             conferenceDiv.innerHTML += `, ${publication.conference.year}`;
@@ -48,10 +48,32 @@ fetch("../assets/data/publications.json")
           publicationDiv.appendChild(conferenceDiv);
         }
 
-        if (publication?.invitation) {
-          const invitationDiv = document.createElement("div");
-          invitationDiv.innerHTML = `<b>Invited to ${publication.invitation}.</b>`;
-          publicationDiv.appendChild(invitationDiv);
+        if (publication?.emphNote) {
+          const noteDiv = document.createElement("div");
+          noteDiv.innerHTML = `<b>${publication.emphNote}</b>`;
+          publicationDiv.appendChild(noteDiv);
+        }
+
+        if (publication?.note) {
+          const noteDiv = document.createElement("div");
+          noteDiv.innerHTML = publication.note;
+          publicationDiv.appendChild(noteDiv);
+        }
+
+
+        if (publication?.links) {
+          const linksDiv = document.createElement("div");
+          linksDiv.innerHTML += "["
+          publication.links.forEach((linkTuple) => {
+            const link = document.createElement("a");
+            link.innerHTML = `${linkTuple[0]}`;
+            link.href = linkTuple[1];
+            linksDiv.appendChild(link);
+            linksDiv.innerHTML += "], ["
+          });
+          linksDiv.innerHTML = linksDiv.innerHTML.substring(0, linksDiv.innerHTML.length - 4);
+          linksDiv.innerHTML += "]"
+          publicationDiv.appendChild(linksDiv);
         }
 
         container.appendChild(publicationDiv);
