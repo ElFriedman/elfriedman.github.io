@@ -40,9 +40,9 @@ fetch("../assets/data/publications.json")
           if (publication?.conference?.abbreviatedName) {
             conferenceDiv.innerHTML += ` <b>(${publication.conference.abbreviatedName})</b>`;
           }
-          if (publication?.conference?.year) {
-            conferenceDiv.innerHTML += `, ${publication.conference.year}`;
-          }
+          // if (publication?.conference?.year) {
+          //   conferenceDiv.innerHTML += `, ${publication.conference.year}`;
+          // }
 
           conferenceDiv.innerHTML += ".";
           publicationDiv.appendChild(conferenceDiv);

@@ -4,7 +4,7 @@
         "authors": ["Arnold Filtser"],
         "conference": {
             "fullName": "57th Symposium on Theory of Computing",
-            "abbreviatedName": "STOC’25",
+            "abbreviatedName": "STOC 2025",
             "year": "2025"
         }
     },
@@ -13,7 +13,7 @@
         "authors": ["Hsien-Chih Chang", "Hung Le", "Shay Solomon", "Cuong Than"],
         "conference": {
             "fullName": "57th Symposium on Theory of Computing",
-            "abbreviatedName": "STOC’25",
+            "abbreviatedName": "STOC 2025",
             "year": "2025"
         }
     },
@@ -22,7 +22,7 @@
         "authors": ["Hsien-Chih Chang", "Vincent Cohen-Addad", "Hung Le", "Marcin Pilipczuk", "Michał Pilipczuk"],
         "conference": {
             "fullName": "2025 Symposium on Discrete Algorithms",
-            "abbreviatedName": "SODA’25",
+            "abbreviatedName": "SODA 2025",
             "year": "2025"
         },
         "links": [["arXiv", "https://arxiv.org/abs/2411.00216"],
@@ -33,7 +33,7 @@
         "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
         "conference": {
             "fullName": "40th International Symposium on Computational Geometry",
-            "abbreviatedName": "SoCG’24",
+            "abbreviatedName": "SoCG 2024",
             "year": "2024"
         },
         "emphNote": "Invited to DCG special issue.",
@@ -44,7 +44,7 @@
         "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
         "conference": {
             "fullName": "2024 Symposium on Discrete Algorithms",
-            "abbreviatedName": "SODA’24",
+            "abbreviatedName": "SODA 2024",
             "year": "2024"
         },
         "note": "This paper subsumes results from our <a href=\"https://arxiv.org/abs/2306.06235\">earlier manuscript</a> about planar graphs.",
@@ -56,7 +56,7 @@
         "authors": ["Hsien-Chih Chang", "Hung Le", "Lazar Milenković", "Shay Solomon", "Cuong Than"],
         "conference": {
             "fullName": "64th Symposium on Foundations of Computer Science",
-            "abbreviatedName": "FOCS’23",
+            "abbreviatedName": "FOCS 2023",
             "year": "2023"
         },
         "links": [["arXiv", "https://arxiv.org/abs/2306.06215"],
@@ -69,7 +69,7 @@
         "authors": ["Csaba Tóth"],
         "conference": {
             "fullName": "38th International Symposium on Computational Geometry",
-            "abbreviatedName": "SoCG’22",
+            "abbreviatedName": "SoCG 2022",
             "year": "2022"
         },
         "emphNote": "Invited to JoCG special issue.",
@@ -81,9 +81,10 @@
         "authors": ["Christopher Thierauf", "Parker Rule", "Evan A. Krause", "Hugo Alves Akitaya", "Andrei Gonczi", "Matias Korman", "Matthias Scheutz"],
         "conference": {
             "fullName": "2021 IEEE International Conference on Robotics and Automation",
-            "abbreviatedName": "ICRA’21",
+            "abbreviatedName": "ICRA 2021",
             "year": "2021"
         },
-        "links": [["arXiv", "https://arxiv.org/abs/2104.02913"]]
+        "links": [["arXiv", "https://arxiv.org/abs/2104.02913"],
+                    ["slides", "../assets/pdf/ICRA_disinfection_slides.pdf"]]
     }
 ]

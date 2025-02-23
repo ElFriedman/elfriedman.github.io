@@ -6,6 +6,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 13pt;
     line-height: 1.5;
@@ -205,4 +206,17 @@ a:hover {
     #profile-picture {
         width: 30%;
     }
+}
+
+/* Footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1d;
+    color: #e8e8e8;
+    text-align: center;
+    font-size: 10pt;
+    padding: 7px;
 }
