@@ -130,9 +130,10 @@ a:hover {
   
 .bar {
     width: 100%;
-    height: 2px;
+    height: 2.5px; /* 2px and 3px seem to cause various problems depending on the browser, but 2.5px seems good */
     background-color: #333;
     border-radius: 5px;
+    transform: translateZ(0); /* Helps make the bars have consistent height across different browsers */
 }
 
 #vertical-nav-links {
@@ -143,7 +144,7 @@ a:hover {
 #hamburger.open .bar1 {
     transform: rotate(45deg);
     position: relative;
-    top: 5px;
+    top: 4.5px;
 }
 
 #hamburger.open .bar2 {
