@@ -60,7 +60,7 @@ li {
 }
 
 .large-nav-bar-container {
-    height: 100%;
+    height: 33px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -161,6 +161,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 8px 0px 8px 0px;
+    gap: 16px;
     animation: slideDown 0.3s ease-in-out forwards;
 }
 
