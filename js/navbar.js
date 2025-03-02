@@ -1,13 +1,12 @@
 class NavBar extends HTMLElement {
-  constructor() {
-    super();
-  }
-
   connectedCallback() {
+    // Expected to be 'about', 'publications', or 'miscellanea'
     const page = this.getAttribute("page");
 
+    // Add name to nav bar if we're on publications page or miscellanea page
     const nameText = page === "publications" || page === "miscellanea" ? "<a href='/' id='nav-bar-name-text'> <b>Jonathan</b> Conroy </a>" : "";
 
+    // One of the three links should be highlighted to show that we're currently on that page
     const aboutHighlighted = page === "about" ? "id='highlighted-nav-link'" : "";
     const publicationsHighlighted = page === "publications" ? "id='highlighted-nav-link'" : "";
     const miscellaneaHighlighted = page === "miscellanea" ? "id='highlighted-nav-link'" : "";
@@ -20,7 +19,7 @@ class NavBar extends HTMLElement {
 
     this.innerHTML = `
         <header id="nav-bar">
-          <div class="container large-nav-bar-container">
+          <div class="container main-nav-bar-container">
               ${nameText}
 
               <div id="horizontal-nav-links">
@@ -35,7 +34,7 @@ class NavBar extends HTMLElement {
                 </div>
               </div>
           </div>
-          <div class="container small-nav-bar-container">
+          <div class="container bottom-nav-bar-container">
             <div id="vertical-nav-links">
               ${navLinks}
             </div>
@@ -43,6 +42,7 @@ class NavBar extends HTMLElement {
         </header>
       `;
 
+    // Add hamburger button dropdown functionality
     this.querySelector("#hamburger").addEventListener("click", () => this.toggleMenu());
   }
 
@@ -50,9 +50,10 @@ class NavBar extends HTMLElement {
     const hamburger = this.querySelector("#hamburger");
     const dropdownMenu = this.querySelector("#vertical-nav-links");
 
+    // Change the styling applied to hamburger icon and dropdown menu to either open or close the menu
     hamburger.classList.toggle("open");
     dropdownMenu.classList.toggle("show");
   }
 }
 
-customElements.define("nav-bar", NavBar);
+customElements.define("nav-bar", NavBar); // The dash in 'nav-bar' is actually required to distinguish it from regular HTML elements.

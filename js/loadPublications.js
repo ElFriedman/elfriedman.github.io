@@ -1,7 +1,11 @@
-function formatNames(names) {
-  if (names.length === 0) return ""; // If the array is empty, return an empty string.
+/*
+  Converts an array of names (in string form) into a readable form.
 
-  if (names.length === 1) return names[0]; // If there's only one name, return it.
+  ['name 1', 'name 2', 'name 3'] -> 'name 1, name 2, and name 3'
+*/
+function createNameString(names) {
+  if (names.length === 0) return ""; // No names provided
+  if (names.length === 1) return names[0]; // Only one name
 
   // If there are two or more names, join them with commas and add ", and" before the last one.
   return names.slice(0, -1).join(", ") + ", and " + names[names.length - 1];
@@ -9,31 +13,39 @@ function formatNames(names) {
 
 fetch("../assets/data/publications.json")
   .then((response) => {
-    // Check if the response is successful
     if (!response.ok) {
       throw new Error("Failed to fetch the JSON file");
     }
-    return response.json(); // Parse the JSON data
+    return response.json();
   })
   .then((data) => {
-    // Get the container where the titles will be displayed
+    // Get the container where the publications info will be displayed
     const container = document.getElementById("publications");
 
+    // Add the info from each publication to the container
     data.forEach((publication) => {
+      // If the publication entry isn't empty
       if (Object.keys(publication).length !== 0) {
+        // Create a div for this particular publication
         const publicationDiv = document.createElement("div");
         publicationDiv.classList.add("publication");
+
+        /*
+          Check for info in the publication entry and add the existing details to new divs
+        */
 
         if (publication?.title) {
           const titleDiv = document.createElement("div");
           titleDiv.innerHTML = `<b>${publication.title}</b>`;
           publicationDiv.appendChild(titleDiv);
         }
+
         if (publication?.authors?.length && publication?.authors?.length !== 0) {
           const authorsDiv = document.createElement("div");
-          authorsDiv.innerHTML = "with " + formatNames(publication.authors);
+          authorsDiv.innerHTML = "with " + createNameString(publication.authors);
           publicationDiv.appendChild(authorsDiv);
         }
+
         if (publication?.conference?.fullName) {
           const conferenceDiv = document.createElement("div");
           conferenceDiv.innerHTML = "in " + publication.conference.fullName;
@@ -49,9 +61,9 @@ fetch("../assets/data/publications.json")
         }
 
         if (publication?.emphNote) {
-          const noteDiv = document.createElement("div");
-          noteDiv.innerHTML = `<b>${publication.emphNote}</b>`;
-          publicationDiv.appendChild(noteDiv);
+          const emphNoteDiv = document.createElement("div");
+          emphNoteDiv.innerHTML = `<b>${publication.emphNote}</b>`;
+          publicationDiv.appendChild(emphNoteDiv);
         }
 
         if (publication?.note) {
@@ -60,22 +72,22 @@ fetch("../assets/data/publications.json")
           publicationDiv.appendChild(noteDiv);
         }
 
-
         if (publication?.links) {
           const linksDiv = document.createElement("div");
-          linksDiv.innerHTML += "["
+          linksDiv.innerHTML += "[";
           publication.links.forEach((linkTuple) => {
             const link = document.createElement("a");
             link.innerHTML = `${linkTuple[0]}`;
             link.href = linkTuple[1];
             linksDiv.appendChild(link);
-            linksDiv.innerHTML += "], ["
+            linksDiv.innerHTML += "], [";
           });
           linksDiv.innerHTML = linksDiv.innerHTML.substring(0, linksDiv.innerHTML.length - 4);
-          linksDiv.innerHTML += "]"
+          linksDiv.innerHTML += "]";
           publicationDiv.appendChild(linksDiv);
         }
 
+        // Done getting/formatting this publication's info. Add it to the container.
         container.appendChild(publicationDiv);
       }
     });
@@ -99,5 +111,5 @@ fetch("../assets/data/publications.json")
     })();
   })
   .catch((error) => {
-    console.error("Error:", error); // Handle any errors
+    console.error(error); // Handle any errors
   });

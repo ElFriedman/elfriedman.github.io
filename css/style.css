@@ -40,6 +40,14 @@ li {
     margin: 1px 0;
 }
 
+.container {
+    max-width: 800px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #profile-picture {
     margin-left: 1rem;
     float: right;
@@ -59,19 +67,11 @@ li {
     z-index: 1000;
 }
 
-.large-nav-bar-container {
+.main-nav-bar-container {
     height: 33px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.container {
-    max-width: 800px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .page-contents {
@@ -80,6 +80,40 @@ li {
 
 .publication {
     margin-bottom: 2rem;
+}
+
+@media (max-width: 575px) {
+    #horizontal-nav-links {
+        display: none;
+    }
+    #hamburger-div {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #profile-picture {
+        width: 163px;
+    }
+}
+
+@media (min-width: 576px) {
+    #horizontal-nav-links {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+    }
+    .bottom-nav-bar-container {
+        display: none;
+    }
+    #hamburger-div {
+        display: none;
+    }
+    #profile-picture {
+        width: 30%;
+    }
 }
 
 /* Formatting for links (al-folio theme) */
@@ -116,7 +150,6 @@ a:hover {
 }
 
 /* Hamburger icon and dropdown menu */
-
 #hamburger {
     width: 22px;
     height: 14px;
@@ -140,7 +173,7 @@ a:hover {
     display: none;
 }
 
-/* Animations */
+/* Opened hamburger icon and dropdown menu */
 #hamburger.open .bar1 {
     transform: rotate(45deg);
     position: relative;
@@ -174,40 +207,6 @@ a:hover {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@media (max-width: 575px) {
-    #horizontal-nav-links {
-        display: none;
-    }
-    #hamburger-div {
-        display: flex;
-        flex-grow: 1;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    #profile-picture {
-        width: 163px;
-    }
-}
-
-@media (min-width: 576px) {
-    #horizontal-nav-links {
-        display: flex;
-        flex-grow: 1;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 15px;
-    }
-    .small-nav-bar-container {
-        display: none;
-    }
-    #hamburger-div {
-        display: none;
-    }
-    #profile-picture {
-        width: 30%;
     }
 }
 
