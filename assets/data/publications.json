@@ -6,7 +6,8 @@
             "fullName": "57th Symposium on Theory of Computing",
             "abbreviatedName": "STOC 2025",
             "year": "2025"
-        }
+        },
+        "links": [["arXiv", "https://arxiv.org/abs/2504.00278"]]
     },
     {
         "title": "Light Tree Covers, Routing, and Path-Reporting Oracles via Spanning Tree Covers in Doubling Graphs",
@@ -15,7 +16,8 @@
             "fullName": "57th Symposium on Theory of Computing",
             "abbreviatedName": "STOC 2025",
             "year": "2025"
-        }
+        },
+        "links": [["arXiv", "https://arxiv.org/abs/2503.22669"]]
     },
     {
         "title": "Embedding Planar Graphs into Graphs of Treewidth $O(\\log^{3}n)$",

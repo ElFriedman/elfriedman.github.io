@@ -101,6 +101,7 @@ fetch("../assets/data/publications.json")
         ],
       },
       loader: { load: ["input/tex", "output/chtml"] },
+      chtml: { scale: 1 },
     };
 
     (function () {
