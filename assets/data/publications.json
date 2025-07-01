@@ -7,7 +7,9 @@
             "abbreviatedName": "STOC 2025",
             "year": "2025"
         },
-        "links": [["arXiv", "https://arxiv.org/abs/2504.00278"]]
+        "links": [["arXiv", "https://arxiv.org/abs/2504.00278"],
+                    ["slides", "../assets/pdf/stoc25-padded-slides.pdf"],
+                    ["talk by me (for STOC, 25 min)", "https://youtu.be/vTEpdnxOmKY?si=ZoswuKxwQn_NZBSw"]]
     },
     {
         "title": "Light Tree Covers, Routing, and Path-Reporting Oracles via Spanning Tree Covers in Doubling Graphs",
@@ -17,7 +19,9 @@
             "abbreviatedName": "STOC 2025",
             "year": "2025"
         },
-        "links": [["arXiv", "https://arxiv.org/abs/2503.22669"]]
+        "links": [["arXiv", "https://arxiv.org/abs/2503.22669"],
+            ["slides", "../assets/pptx/stoc25-doubling-slides.pptx"],
+            ["talk by Shay (for STOC, 38 min)", "https://youtu.be/EIDG1UjDuaQ?si=qxhgo3SVNmGrn7vh"]]
     },
     {
         "title": "Embedding Planar Graphs into Graphs of Treewidth $O(\\log^{3}n)$",
