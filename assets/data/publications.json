@@ -1,9 +1,19 @@
 [
     {
+        "title": "Distance Approximating Minors for Planar and Minor-Free Graphs",
+        "authors": ["Hsien-Chih Chang"],
+        "conference": {
+            "fullName": "66th Symposium on Foundations of Computer Science",
+            "abbreviatedName": "FOCS 2025",
+            "year": "2025"
+        },
+        "note": "[Coming soon!]"
+    },
+    {
         "title": "How to Protect Yourself from Threatening Skeletons: Optimal Padded Decompositions for Minor-Free Graphs",
         "authors": ["Arnold Filtser"],
         "conference": {
-            "fullName": "57th Symposium on Theory of Computing",
+            "fullName": "57th ACM Symposium on Theory of Computing",
             "abbreviatedName": "STOC 2025",
             "year": "2025"
         },
