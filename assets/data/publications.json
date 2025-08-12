@@ -19,7 +19,9 @@
         },
         "links": [["arXiv", "https://arxiv.org/abs/2504.00278"],
                     ["slides", "../assets/pdf/stoc25-padded-slides.pdf"],
-                    ["talk by me (25 min)", "https://youtu.be/vTEpdnxOmKY?si=ZoswuKxwQn_NZBSw"]]
+                    ["talk by me (25 min)", "https://youtu.be/vTEpdnxOmKY?si=ZoswuKxwQn_NZBSw"],
+                    ["talk by Arnold (65 min)", "https://youtu.be/JBtyKyeL7Ck?si=n9K0vwiToDqha1uC"],
+                    ["blog post by Hung Le", "https://minorfree.github.io/PaddedSolved/"]]
     },
     {
         "title": "Light Tree Covers, Routing, and Path-Reporting Oracles via Spanning Tree Covers in Doubling Graphs",
@@ -65,7 +67,8 @@
         },
         "note": "This paper subsumes results from our <a href=\"https://arxiv.org/abs/2306.06235\">earlier manuscript</a> about planar graphs.",
         "links": [["arXiv", "https://arxiv.org/abs/2308.00555"],
-                   ["slides", "../assets/pdf/soda24-SPR-slides.pdf"]]
+                   ["slides", "../assets/pdf/soda24-SPR-slides.pdf"],
+                    ["related blog post by Hung", "https://minorfree.github.io/SPR/"]]
     },
     {
         "title": "Covering Planar Metrics (and Beyond): $O(1)$ Trees Suffice",
