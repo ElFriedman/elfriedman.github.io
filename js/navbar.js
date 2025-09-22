@@ -4,7 +4,7 @@ class NavBar extends HTMLElement {
     const page = this.getAttribute("page");
 
     // Add name to nav bar if we're on publications page or miscellanea page
-    const nameText = page === "publications" || page === "miscellanea" ? "<a href='/' id='nav-bar-name-text'> <b>Jonathan</b> Conroy </a>" : "";
+    const nameText = page === "publications" || page === "miscellanea" ? "<a href='/' id='nav-bar-name-text'> <b>Eli</b> Friedman </a>" : "";
 
     // One of the three links should be highlighted to show that we're currently on that page
     const aboutHighlighted = page === "about" ? "id='highlighted-nav-link'" : "";
